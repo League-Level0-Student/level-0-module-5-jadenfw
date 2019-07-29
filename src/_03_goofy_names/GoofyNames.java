@@ -17,26 +17,26 @@ public class GoofyNames {
 		
 		// 3. Loop through each character of the name (steps 4 - 6).
 		//    HINT: Use .length() to determine the number of characters in the String.
-		for (int i = 0; i < name.length() - 1; i++) 
+		for (int i = 0; i < name.length(); i++) 
 		{
-			
-		String cha = name.substring(i++, name.length() );
-			// 4. Create a String variable to store the next character of the name
+				// 4. Create a String variable to store the next character of the name
 			//    using .substring(start, end)
 			//    HINT: replace 'start' and 'end' to get String with character at i 
+		String cha = name.substring(i, i+1);
+		
 			
 			// 5. Use MODULO to set this variable to upper case for EVEN characters
 			//    and lower case for ODD characters.
 		System.out.println(cha);
 			if(i%2 == 0)
 			{
-				cha.toUpperCase();
+				cha = cha.toUpperCase();
 				System.out.println(cha);
 				
 			}
 			else
 			{
-				cha.toLowerCase();
+				cha = cha.toLowerCase();
 				System.out.println(cha);
 			}
 			// 6. ADD this String  (containing 1 char) to the goofyName String 
